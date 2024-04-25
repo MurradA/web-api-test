@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
 </p>
 <p align="center">
-    <h1 align="center">DOTNETAPI-INFRASTRUCTURE</h1>
+    <h1 align="center">web-api-test</h1>
 </p>
 <p align="center">
 		<em>Developed with the software and tools below.</em>
@@ -21,7 +21,7 @@
 > - [ Modules](#-modules)
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
->   - [Running dotnetapi-infrastructure](#-running-dotnetapi-infrastructure)
+>   - [Running web-api-test](#-running-web-api-test)
 > - [ Contributing](#-contributing)
 
 ---
@@ -35,7 +35,7 @@
 ##  Repository Structure
 
 ```sh
-└── dotnetapi-infrastructure/
+└── web-api-test/
     ├── .github
     │   └── workflows
     │       └── terraform-pipeline.yml
@@ -65,8 +65,8 @@
 
 | File                                                                                           | Summary                         |
 | ---                                                                                            | ---                             |
-| [main.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/main.tf)           | <code>► Variables</code> |
-| [variables.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/variables.tf) | <code>► Main Configuration</code> |
+| [main.tf](https://github.com/Raihan11x/web-api-test/blob/master/main.tf)           | <code>► Variables</code> |
+| [variables.tf](https://github.com/Raihan11x/web-api-test/blob/master/variables.tf) | <code>► Main Configuration</code> |
 
 </details>
 
@@ -74,7 +74,7 @@
 
 | File                                                                                                                                 | Summary                         |
 | ---                                                                                                                                  | ---                             |
-| [terraform-pipeline.yml](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/.github/workflows/terraform-pipeline.yml) | <code>► Pipeline</code> |
+| [terraform-pipeline.yml](https://github.com/Raihan11x/web-api-test/blob/master/.github/workflows/terraform-pipeline.yml) | <code>► Pipeline</code> |
 
 </details>
 
@@ -82,9 +82,9 @@
 
 | File                                                                                                         | Summary                         |
 | ---                                                                                                          | ---                             |
-| [outputs.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/dbase/outputs.tf)     | <code>► Database Modules Outputs</code> |
-| [main.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/dbase/main.tf)           | <code>► Database Modules Main</code> |
-| [variables.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/dbase/variables.tf) | <code>► Database Modules Variables</code> |
+| [outputs.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/dbase/outputs.tf)     | <code>► Database Modules Outputs</code> |
+| [main.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/dbase/main.tf)           | <code>► Database Modules Main</code> |
+| [variables.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/dbase/variables.tf) | <code>► Database Modules Variables</code> |
 
 </details>
 
@@ -92,9 +92,9 @@
 
 | File                                                                                                           | Summary                         |
 | ---                                                                                                            | ---                             |
-| [outputs.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/network/outputs.tf)     | <code>► Network Modules Outputs</code> |
-| [main.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/network/main.tf)           | <code>► Network Modules Main</code> |
-| [variables.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/network/variables.tf) | <code>► Network Modules Variables</code> |
+| [outputs.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/network/outputs.tf)     | <code>► Network Modules Outputs</code> |
+| [main.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/network/main.tf)           | <code>► Network Modules Main</code> |
+| [variables.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/network/variables.tf) | <code>► Network Modules Variables</code> |
 
 </details>
 
@@ -102,9 +102,9 @@
 
 | File                                                                                                               | Summary                         |
 | ---                                                                                                                | ---                             |
-| [outputs.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/application/outputs.tf)     | <code>► Application Module Outputs</code> |
-| [main.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/application/main.tf)           | <code>► Application Module Main</code> |
-| [variables.tf](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/master/modules/application/variables.tf) | <code>► Application Module Variables</code> |
+| [outputs.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/application/outputs.tf)     | <code>► Application Module Outputs</code> |
+| [main.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/application/main.tf)           | <code>► Application Module Main</code> |
+| [variables.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/application/variables.tf) | <code>► Application Module Variables</code> |
 
 </details>
 
@@ -120,16 +120,16 @@ Ensure you have the following dependencies installed on your system:
 
 ###  Installation
 
-1. Clone the dotnetapi-infrastructure repository:
+1. Clone the web-api-test repository:
 
 ```sh
-git clone https://github.com/Raihan11x/dotnetapi-infrastructure
+git clone https://github.com/Raihan11x/web-api-test
 ```
 
 2. Change to the project directory:
 
 ```sh
-cd dotnetapi-infrastructure
+cd web-api-test
 ```
 
 3. Install the dependencies:
@@ -138,9 +138,9 @@ cd dotnetapi-infrastructure
 terraform init
 ```
 
-###  Running `dotnetapi-infrastructure`
+###  Running `web-api-test`
 
-Use the following command to run dotnetapi-infrastructure locally:
+Use the following command to run web-api-test locally:
 
 ```sh
 terraform plan
@@ -169,9 +169,9 @@ can also include more steps if so desired, here is how that would look:
 
 Contributions are welcome! Here are several ways you can contribute:
 
-- **[Submit Pull Requests](https://github.com/Raihan11x/dotnetapi-infrastructure/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/Raihan11x/dotnetapi-infrastructure/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/Raihan11x/dotnetapi-infrastructure/issues)**: Submit bugs found or log feature requests for the `dotnetapi-infrastructure` project.
+- **[Submit Pull Requests](https://github.com/Raihan11x/web-api-test/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/Raihan11x/web-api-test/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/Raihan11x/web-api-test/issues)**: Submit bugs found or log feature requests for the `web-api-test` project.
 
 <details closed>
     <summary>Contributing Guidelines</summary>
@@ -179,7 +179,7 @@ Contributions are welcome! Here are several ways you can contribute:
 1. **Fork the Repository**: Start by forking the project repository to your github account.
 2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
    ```sh
-   git clone https://github.com/Raihan11x/dotnetapi-infrastructure
+   git clone https://github.com/Raihan11x/web-api-test
    ```
 3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
    ```sh
