@@ -143,7 +143,7 @@ terraform init
 Use the following command to run web-api-test locally:
 
 ```sh
-terraform plan
+terraform plan --var-file=<<insert tfvars file for env>>
 ```
 
 NOTE: This will show you what changes will occur without applying these changes
@@ -202,6 +202,14 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ---
 
-[**Return**](#-quick-links)
+##  Future improvements
 
----
+List of future improvements that can be made to project over time:
+
+1. **Authentication**: Create an appropriate IAM role with the minimum required permissions developers need to create out daily work for them to assume. Consider using STS assume role if multiple AWS accounts used for different envs.
+2. **Hosting**: Create one global AWS hosted zone and route 53 records for different environments assigning nameservers correctly.
+3. **Account structure**: For testing purposes the different environments currently exist in the same AWS account. Consider using a multiple AWS account strategy in production for better isolation of environments. Security first principles allowing better ACL policies and billing isolation.
+4. **Web api**: Create Dockerfile in order to build the correct web api image and implement into pipeline.
+5. **Database perms**: Create read roles for the relevant users/teams. Have a granualar approach to authenticating to different databases with different usernames/passwords.
+6. **Security first**: Expand on the security first approach when developing infrastructure e.g utilising Service Control Policies at the org level and AWS WAF.
+7. **Cost optimisation**: Utilise the default tagging at provider level in order to tag and effectively track cost usage of your resources. AWS cost explorer
