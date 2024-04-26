@@ -9,6 +9,13 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+  default_tags {
+    tags = {
+      team          = "devops"
+      managed-by    = "terraform"
+      deployed-from = "web-api"
+    }
+  }
 }
 
 #ECS module
