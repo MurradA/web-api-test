@@ -63,8 +63,8 @@
 
 | File                                                                                           | Summary                         |
 | ---                                                                                            | ---                             |
-| [main.tf](https://github.com/Raihan11x/web-api-test/blob/master/main.tf)           | <code>► Variables</code> |
-| [variables.tf](https://github.com/Raihan11x/web-api-test/blob/master/variables.tf) | <code>► Main Configuration</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/master/main.tf)           | <code>► Variables</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/variables.tf) | <code>► Main Configuration</code> |
 
 </details>
 
@@ -72,7 +72,7 @@
 
 | File                                                                                                                                 | Summary                         |
 | ---                                                                                                                                  | ---                             |
-| [terraform-pipeline.yml](https://github.com/Raihan11x/web-api-test/blob/master/.github/workflows/terraform-pipeline.yml) | <code>► Pipeline</code> |
+| [terraform-pipeline.yml](https://github.com/MurradA/web-api-test/blob/master/.github/workflows/terraform-pipeline.yml) | <code>► Pipeline</code> |
 
 </details>
 
@@ -80,9 +80,9 @@
 
 | File                                                                                                         | Summary                         |
 | ---                                                                                                          | ---                             |
-| [outputs.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/dbase/outputs.tf)     | <code>► Database Modules Outputs</code> |
-| [main.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/dbase/main.tf)           | <code>► Database Modules Main</code> |
-| [variables.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/dbase/variables.tf) | <code>► Database Modules Variables</code> |
+| [outputs.tf](https://github.com/MurradA/web-api-test/blob/master/modules/dbase/outputs.tf)     | <code>► Database Modules Outputs</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/dbase/main.tf)           | <code>► Database Modules Main</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/dbase/variables.tf) | <code>► Database Modules Variables</code> |
 
 </details>
 
@@ -90,9 +90,9 @@
 
 | File                                                                                                           | Summary                         |
 | ---                                                                                                            | ---                             |
-| [outputs.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/network/outputs.tf)     | <code>► Network Modules Outputs</code> |
-| [main.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/network/main.tf)           | <code>► Network Modules Main</code> |
-| [variables.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/network/variables.tf) | <code>► Network Modules Variables</code> |
+| [outputs.tf](https://github.com/MurradA/web-api-test/blob/master/modules/network/outputs.tf)     | <code>► Network Modules Outputs</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/network/main.tf)           | <code>► Network Modules Main</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/network/variables.tf) | <code>► Network Modules Variables</code> |
 
 </details>
 
@@ -100,9 +100,9 @@
 
 | File                                                                                                               | Summary                         |
 | ---                                                                                                                | ---                             |
-| [outputs.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/application/outputs.tf)     | <code>► Application Module Outputs</code> |
-| [main.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/application/main.tf)           | <code>► Application Module Main</code> |
-| [variables.tf](https://github.com/Raihan11x/web-api-test/blob/master/modules/application/variables.tf) | <code>► Application Module Variables</code> |
+| [outputs.tf](https://github.com/MurradA/web-api-test/blob/master/modules/application/outputs.tf)     | <code>► Application Module Outputs</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/application/main.tf)           | <code>► Application Module Main</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/application/variables.tf) | <code>► Application Module Variables</code> |
 
 </details>
 
@@ -121,7 +121,7 @@ Ensure you have the following dependencies installed on your system:
 1. Clone the web-api-test repository:
 
 ```sh
-git clone https://github.com/Raihan11x/web-api-test
+git clone https://github.com/MurradA/web-api-test
 ```
 
 2. Change to the project directory:
@@ -167,9 +167,9 @@ can also include more steps if so desired, here is how that would look:
 
 Contributions are welcome! Here are several ways you can contribute:
 
-- **[Submit Pull Requests](https://github.com/Raihan11x/web-api-test/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/Raihan11x/web-api-test/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/Raihan11x/web-api-test/issues)**: Submit bugs found or log feature requests for the `web-api-test` project.
+- **[Submit Pull Requests](https://github.com/MurradA/web-api-test/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/MurradA/web-api-test/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/MurradA/web-api-test/issues)**: Submit bugs found or log feature requests for the `web-api-test` project.
 
 <details closed>
     <summary>Contributing Guidelines</summary>
@@ -177,7 +177,7 @@ Contributions are welcome! Here are several ways you can contribute:
 1. **Fork the Repository**: Start by forking the project repository to your github account.
 2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
    ```sh
-   git clone https://github.com/Raihan11x/web-api-test
+   git clone https://github.com/MurradA/web-api-test
    ```
 3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
    ```sh
