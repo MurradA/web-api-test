@@ -4,8 +4,6 @@
 <p align="center">
     <h1 align="center">web-api-test</h1>
 </p>
-<p align="center">
-		<em>Developed with the software and tools below.</em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/badge/Terraform-7B42BC.svg?style=flat&logo=Terraform&logoColor=white" alt="Terraform">
