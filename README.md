@@ -5,7 +5,7 @@
 
 ##  Overview
 
-<code>► README instructing deployment of application to AWS ECS using terraform and Github actions structure via modules</code>
+<code>► README instructing deployment of application to AWS ECS using terraform and Github actions </code>
 
 ---
 
