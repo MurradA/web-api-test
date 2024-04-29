@@ -47,8 +47,8 @@
 
 | File                                                                                           | Summary                         |
 | ---                                                                                            | ---                             |
-| [main.tf](https://github.com/MurradA/web-api-test/blob/master/main.tf)           | <code>► Variables</code> |
-| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/variables.tf) | <code>► Main Configuration</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/master/main.tf)           | <code>► Main Configuration to call modules</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/variables.tf) | <code>► variables</code> |
 
 </details>
 
