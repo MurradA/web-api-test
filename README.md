@@ -12,15 +12,17 @@
 ##  Repository Structure
 
 ```sh
-└── web-api-test/
-    ├── .github
-    │   └── workflows
-    │       └── terraform-pipeline.yml
+└── web-api-test/murrad-tech-test
+    ├── workflows
+    │   └── terraform-pipeline.yml
     ├── README.md
     ├── main.tf
-    ├── Dev
-    ├── Staging
-    ├── Prod
+    ├── dev
+    │   └── dev.tfvars
+    ├── staging
+    │   └── staging.tfvars
+    ├── prod
+    │   └── prod.tfvars
     ├── modules
     │   ├── ecs
     │   │   ├── main.tf
@@ -58,13 +60,13 @@
 
 </details>
 
-<details closed><summary>modules.dbase</summary>
+<details closed><summary>modules.rds</summary>
 
 | File                                                                                                         | Summary                         |
 | ---                                                                                                          | ---                             |
-| [outputs.tf](https://github.com/MurradA/web-api-test/blob/master/modules/dbase/outputs.tf)     | <code>► Database Modules Outputs</code> |
-| [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/dbase/main.tf)           | <code>► Database Modules Main</code> |
-| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/dbase/variables.tf) | <code>► Database Modules Variables</code> |
+| [outputs.tf](https://github.com/MurradA/web-api-test/blob/master/modules/rds/outputs.tf)     | <code>► Database Modules Outputs</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/rds/main.tf)           | <code>► Database Modules Main</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/rds/variables.tf) | <code>► Database Modules Variables</code> |
 
 </details>
 
@@ -109,13 +111,29 @@ git clone https://github.com/MurradA/web-api-test
 2. Change to the project directory:
 
 ```sh
-cd web-api-test
+cd web-api-test/murrad-tech-test
 ```
 
-3. Install the dependencies:
+3. Initialise your working directory containing terraform configuration files using the command below. This will install your plugins, modules and download the dependencies:
 
 ```sh
 terraform init
+```
+
+###  Validating and testing:
+
+Despite having certain criteria for testing/linting in your terraform pipeline, it is good practice to test that a certain formating and validation standard has been met from your configuration files:
+
+1. Run Terraform format in order to ensure that all your configuration files within your working directory have been written following terraforms standard
+
+```sh
+terraform fmt --recursive
+```
+
+2. Run terraform validate to check the syntax and structure of your Terraform configuration files, ensuring they are valid and free of errors.
+
+```sh
+terraform validate
 ```
 
 ###  Running `web-api-test`
@@ -126,57 +144,44 @@ Use the following command to run web-api-test locally:
 terraform plan --var-file=<<insert tfvars file for env>>
 ```
 
-NOTE: This will show you what changes will occur without applying these changes
+NOTE: This will compare your existent state to your desired state using the terraform state file hence showing what changes could occur
 
 ---
-
-## Pipeline
-
-Modify components fo the pipeline to your needs, an example would be the name down below, you can change this to whatever suits your project.
-
-```sh
-name: Terraform Pipeline
-```
-can also include more steps if so desired, here is how that would look:
-
-```sh
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-```
 
 ##  Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
 
-- **[Submit Pull Requests](https://github.com/MurradA/web-api-test/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/MurradA/web-api-test/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/MurradA/web-api-test/issues)**: Submit bugs found or log feature requests for the `web-api-test` project.
+- **[Submit Pull Requests](https://github.com/MurradA/web-api-test/murrad-tech-test/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/MurradA/web-api-test/murrad-tech-test/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/MurradA/web-api-test/murrad-tech-test/issues)**: Submit bugs found or log feature requests for the `web-api-test` project.
 
 <details closed>
     <summary>Contributing Guidelines</summary>
 
-1. **Fork the Repository**: Start by forking the project repository to your github account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
+1. **Begin by Forking the Repository**: Initial step required is to fork the repository to your github account.
+2. **Clone repository**: Execute the command below in order to clone the repository locally using a git client.
    ```sh
    git clone https://github.com/MurradA/web-api-test
    ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+3. **Branching strategy**: It is always best practice to create a new branch giving it a descriptive name relevant to the task.
    ```sh
    git checkout -b new-feature-x
    ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
+4. **Select changes you wish to add**: Add the changes of the files you wish to deploy.
+   ```sh
+   git add <<file-name>>
+   ```
+5. **Commit Your Changes**: Commit with a clear message describing your updates. It is best practice to construct a commit message in an imperative mood e.g 'fix typo' rather than 'fixed typo'
    ```sh
    git commit -m 'Implemented new feature x.'
    ```
-6. **Push to GitHub**: Push the changes to your forked repository.
+6. **Push changes to GitHub**: Push the changes that you have made to the forked GitHub repo.
    ```sh
    git push origin new-feature-x
    ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-
-Once your PR is reviewed and approved, it will be merged into the main branch.
+7. **Submit a Pull Request**: Create a PR against the original project repository that clearly describes the changes that you have made. It is best practice to wait for your PR to be reviewed and approved before merging into the main branch.
+Make sure to test the existing changes to ensure that the pipeline still successful runs and your changes should not break anything.
 
 </details>
 
