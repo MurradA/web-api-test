@@ -64,7 +64,7 @@
 
 | File                                                                                                         | Summary                         |
 | ---                                                                                                          | ---                             |
-| [outputs.tf](https://github.com/MurradA/web-api-test/blob/master/modules/rds/outputs.tf)     | <code>► Database Modules Outputs</code> |
+| [outputs.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/rds/outputs.tf)     | <code>► Database Modules Outputs</code> |
 | [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/rds/main.tf)           | <code>► Database Modules Main</code> |
 | [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/rds/variables.tf) | <code>► Database Modules Variables</code> |
 
