@@ -47,8 +47,8 @@
 
 | File                                                                                           | Summary                         |
 | ---                                                                                            | ---                             |
-| [main.tf](https://github.com/MurradA/web-api-test/blob/master/main.tf)           | <code>► Main Configuration to call modules</code> |
-| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/variables.tf) | <code>► variables</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/main.tf)           | <code>► Main Configuration to call modules</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/variables.tf) | <code>► variables</code> |
 
 </details>
 
@@ -56,7 +56,7 @@
 
 | File                                                                                                                                 | Summary                         |
 | ---                                                                                                                                  | ---                             |
-| [terraform-pipeline.yml](https://github.com/MurradA/web-api-test/blob/master/.github/workflows/terraform-pipeline.yml) | <code>► Pipeline</code> |
+| [terraform-pipeline.yml](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/workflows/terraform-pipeline.yml) | <code>► Pipeline</code> |
 
 </details>
 
@@ -65,8 +65,8 @@
 | File                                                                                                         | Summary                         |
 | ---                                                                                                          | ---                             |
 | [outputs.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/rds/outputs.tf)     | <code>► Database Modules Outputs</code> |
-| [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/rds/main.tf)           | <code>► Database Modules Main</code> |
-| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/rds/variables.tf) | <code>► Database Modules Variables</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/rds/main.tf)           | <code>► Database Modules Main</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/rds/variables.tf) | <code>► Database Modules Variables</code> |
 
 </details>
 
@@ -74,9 +74,9 @@
 
 | File                                                                                                           | Summary                         |
 | ---                                                                                                            | ---                             |
-| [outputs.tf](https://github.com/MurradA/web-api-test/blob/master/modules/network/outputs.tf)     | <code>► Network Modules Outputs</code> |
-| [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/network/main.tf)           | <code>► Network Modules Main</code> |
-| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/network/variables.tf) | <code>► Network Modules Variables</code> |
+| [outputs.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/vpc/outputs.tf)     | <code>► Network Modules Outputs</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/vpc/main.tf)           | <code>► Network Modules Main</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/vpc/variables.tf) | <code>► Network Modules Variables</code> |
 
 </details>
 
@@ -84,9 +84,9 @@
 
 | File                                                                                                               | Summary                         |
 | ---                                                                                                                | ---                             |
-| [outputs.tf](https://github.com/MurradA/web-api-test/blob/master/modules/application/outputs.tf)     | <code>► Application Module Outputs</code> |
-| [main.tf](https://github.com/MurradA/web-api-test/blob/master/modules/application/main.tf)           | <code>► Application Module Main</code> |
-| [variables.tf](https://github.com/MurradA/web-api-test/blob/master/modules/application/variables.tf) | <code>► Application Module Variables</code> |
+| [outputs.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/ecs/outputs.tf)     | <code>► Application Module Outputs</code> |
+| [main.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/ecs/main.tf)           | <code>► Application Module Main</code> |
+| [variables.tf](https://github.com/MurradA/web-api-test/blob/main/murrad-tech-test/modules/ecs/variables.tf) | <code>► Application Module Variables</code> |
 
 </details>
 
@@ -152,7 +152,7 @@ NOTE: This will compare your existent state to your desired state using the terr
 
 Contributions are welcome! Here are several ways you can contribute:
 
-- **[Submit Pull Requests](https://github.com/MurradA/web-api-test/murrad-tech-test/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Submit Pull Requests](https://github.com/MurradA/web-api-test/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
 - **[Join the Discussions](https://github.com/MurradA/web-api-test/murrad-tech-test/discussions)**: Share your insights, provide feedback, or ask questions.
 - **[Report Issues](https://github.com/MurradA/web-api-test/murrad-tech-test/issues)**: Submit bugs found or log feature requests for the `web-api-test` project.
 
