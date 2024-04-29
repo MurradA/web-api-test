@@ -3,22 +3,9 @@
 </p>
 <hr>
 
-##  Quick Links
-
-> - [ Overview](#-overview)
-> - [ Features](#-features)
-> - [ Repository Structure](#-repository-structure)
-> - [ Modules](#-modules)
-> - [ Getting Started](#-getting-started)
->   - [ Installation](#-installation)
->   - [Running web-api-test](#-running-web-api-test)
-> - [ Contributing](#-contributing)
-
----
-
 ##  Overview
 
-<code>► This README provides instructions for deploying the infrastructure with Terraform on AWS. The infrastructure has modules</code>
+<code>► README instructing deployment of application to AWS ECS using terraform and Github actions structure via modules</code>
 
 ---
 
