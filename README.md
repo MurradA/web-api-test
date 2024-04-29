@@ -105,7 +105,7 @@ Ensure you have the following dependencies installed on your system:
 1. Clone the web-api-test repository:
 
 ```sh
-git clone https://github.com/MurradA/web-api-test
+git clone https://github.com/MurradA/web-api-test.git
 ```
 
 2. Change to the project directory:
