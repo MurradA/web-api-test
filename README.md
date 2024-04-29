@@ -1,11 +1,6 @@
 <p align="center">
     <h1 align="center">web-api-test</h1>
 </p>
-</p>
-<p align="center">
-	<img src="https://img.shields.io/badge/Terraform-7B42BC.svg?style=flat&logo=Terraform&logoColor=white" alt="Terraform">
-	<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=flat&logo=GitHub-Actions&logoColor=white" alt="GitHub%20Actions">
-</p>
 <hr>
 
 ##  Quick Links
