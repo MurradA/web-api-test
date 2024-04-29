@@ -18,6 +18,9 @@
     │       └── terraform-pipeline.yml
     ├── README.md
     ├── main.tf
+    ├── Dev
+    ├── Staging
+    ├── Prod
     ├── modules
     │   ├── ecs
     │   │   ├── main.tf
